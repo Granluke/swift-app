@@ -38,19 +38,43 @@
                                     <action selector="ButtonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOB-hg-jLk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-JS-xlf">
+                                <rect key="frame" x="137.5" y="118" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Cyi-nu-zvP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0u-yd-uPf">
+                                <rect key="frame" x="137.5" y="184" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xo0-Rd-Tjh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4Gi-S2-HRd" firstAttribute="top" secondItem="r0u-yd-uPf" secondAttribute="bottom" constant="37" id="8Nk-ZF-osK"/>
+                            <constraint firstItem="EfI-JS-xlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99E-dd-5mg"/>
                             <constraint firstItem="4Gi-S2-HRd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cdo-3T-PfZ"/>
                             <constraint firstItem="tcb-eo-VZw" firstAttribute="top" secondItem="4Gi-S2-HRd" secondAttribute="bottom" constant="137" id="Mxb-5L-iM3"/>
                             <constraint firstItem="4Gi-S2-HRd" firstAttribute="top" secondItem="dBm-Ge-Qnc" secondAttribute="bottom" constant="200" id="Ttk-2b-erB"/>
                             <constraint firstItem="dBm-Ge-Qnc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VvT-4p-hCb"/>
+                            <constraint firstItem="r0u-yd-uPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XXx-D6-dTN"/>
                             <constraint firstItem="dBm-Ge-Qnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Yw6-ML-qeC"/>
+                            <constraint firstItem="4Gi-S2-HRd" firstAttribute="top" secondItem="EfI-JS-xlf" secondAttribute="bottom" constant="103" id="aue-r8-adY"/>
                             <constraint firstItem="tcb-eo-VZw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cvZ-jx-zWw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="EfI-JS-xlf" id="3x3-4p-cyQ"/>
+                        <outlet property="Text2" destination="r0u-yd-uPf" id="sfS-fI-6pa"/>
                         <outlet property="theLabel" destination="dBm-Ge-Qnc" id="R2I-Ze-Cfo"/>
                     </connections>
                 </viewController>
